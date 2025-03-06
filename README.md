@@ -1,4 +1,4 @@
-# Resume Ranking Project
+# AI-Powered Resume Screening And Ranking System
 
 ## Overview
 This project automates the process of resume screening by ranking resumes based on predefined criteria using Natural Language Processing (NLP) and Machine Learning (ML) techniques. It helps recruiters efficiently shortlist candidates by scoring resumes according to their relevance to a job description.
