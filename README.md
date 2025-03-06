@@ -57,14 +57,3 @@ This project automates the process of resume screening by ranking resumes based 
 ## Conclusion
 This project provides an automated approach to resume screening using NLP and ML techniques. By ranking resumes based on relevance, it reduces the time recruiters spend manually reviewing applications while improving the quality of candidate selection. Future improvements may include deep learning-based NLP models and integration with applicant tracking systems.
 
-## Contributing
-Feel free to fork the repository and submit pull requests with improvements. Contributions can include:
-- Enhancing resume parsing capabilities.
-- Improving the ranking algorithm.
-- Adding more visualization tools.
-
-## License
-This project is licensed under the MIT License.
-
-## Author
-Your Name - [LinkedIn](https://www.linkedin.com/in/yourprofile)
