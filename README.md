@@ -1,7 +1,8 @@
 # AI-Powered Resume Screening And Ranking System
 
 ## Overview
-This project automates the process of resume screening by ranking resumes based on predefined criteria using Natural Language Processing (NLP) and Machine Learning (ML) techniques. It helps recruiters efficiently shortlist candidates by scoring resumes according to their relevance to a job description.
+This project is a Streamlit-based web application that ranks resumes based on their relevance to a given job description using TF-IDF vectorization and cosine similarity.
+This project automates the process of resume screening by ranking resumes based on predefined criteria using Natural Language Processing (NLP) and Machine Learning (ML) techniques.
 
 ## Objectives
 - Automate the resume screening process to save time and effort.
@@ -10,40 +11,45 @@ This project automates the process of resume screening by ranking resumes based 
 - Provide a user-friendly interface for recruiters to process resumes.
 
 ## Techniques Used
-- **Natural Language Processing (NLP):** Used for text extraction and processing from resumes and job descriptions.
-- **Machine Learning (ML):** Implements classification and ranking algorithms to score resumes.
-- **TF-IDF (Term Frequency-Inverse Document Frequency):** Extracts relevant keywords from resumes and job descriptions.
-- **Word Embeddings (Word2Vec, BERT, or SpaCy):** Captures semantic meaning for better text comparison.
-- **Similarity Measurement (Cosine Similarity, Jaccard Similarity):** Compares resumes with job descriptions.
-- **Data Visualization:** Uses graphs and tables to present ranked candidates effectively.
+- **Python:**(Backend logic)
+- **Streamlit :**(Frontend UI framework)
+- **PyPDF2:**(Extract text from PDF files)
+- **scikit-learn:**(Natural Language Processing and similarity scoring)
+- **Pandas:**(Data processing and table rendering)
 
 ## Features
-- Parses and processes resumes in various formats (PDF, DOCX, etc.).
-- Extracts key features such as skills, experience, education, and certifications.
-- Uses NLP to compare resumes with job descriptions.
-- Implements a ranking algorithm to score resumes based on relevance.
-- Generates a ranked list of candidates for easy shortlisting.
-- Provides visualizations and insights on candidate suitability.
+-Upload multiple PDF resumes.
+-Enter a job description as input.
+-Extract text from PDFs using PyPDF2.
+-Compute similarity scores between the job description and resumes.
+-Display ranked results in tabular format.
+-Simple and interactive UI powered by Streamlit.
+-Real-time ranking of resumes based on job relevance.
 
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/resume-ranking.git
-   cd resume-ranking
+   git clone https://github.com/yourusername/resume-screening-app.git
+   cd resume-screening-app
    ```
-2. Install dependencies:
+
+2. Create a virtual environment:
+    ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+   
+3. Install dependencies:
    ```sh
    pip install -r requirements.txt
    ```
 
-## Usage
-1. Open the Jupyter Notebook:
-   ```sh
-   jupyter notebook Resume_Ranking.ipynb
-   ```
-2. Run the notebook step by step to process resumes and generate rankings.
-3. Upload resumes and job descriptions as inputs.
-4. View the ranked list of candidates with scores.
+## Running the App
+Run the following command to launch the Streamlit app:
+ ```sh
+streamlit run resume_app.py
+  ```
+
 
 ## Dependencies
 - Python 3.x
@@ -55,5 +61,4 @@ This project automates the process of resume screening by ranking resumes based 
 - Docx (for processing Word documents)
 
 ## Conclusion
-This project provides an automated approach to resume screening using NLP and ML techniques. By ranking resumes based on relevance, it reduces the time recruiters spend manually reviewing applications while improving the quality of candidate selection. Future improvements may include deep learning-based NLP models and integration with applicant tracking systems.
-
+This AI-powered resume screening and ranking system provides an efficient way to analyze and rank resumes based on job relevance. By leveraging NLP techniques, the tool automates the initial screening process, reducing the time and effort required for recruiters. Future enhancements will further improve accuracy and usability, making it an indispensable tool for HR professionals and hiring managers.
