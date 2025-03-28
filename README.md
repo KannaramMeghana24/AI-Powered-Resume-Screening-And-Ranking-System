@@ -19,11 +19,17 @@ This project automates the process of resume screening by ranking resumes based 
 
 ## Features
 -Upload multiple PDF resumes.
+
 -Enter a job description as input.
+
 -Extract text from PDFs using PyPDF2.
+
 -Compute similarity scores between the job description and resumes.
+
 -Display ranked results in tabular format.
+
 -Simple and interactive UI powered by Streamlit.
+
 -Real-time ranking of resumes based on job relevance.
 
 ## Installation
